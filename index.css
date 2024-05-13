@@ -106,7 +106,7 @@ body {
 }
 #div_control {
     height: 25vmax;
-    display: flex;
+    display: none;
     justify-content: space-evenly;
     align-items: center;
 }
