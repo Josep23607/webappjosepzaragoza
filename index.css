@@ -206,6 +206,8 @@ body {
     #seccio_5 {
         flex-direction: row;
     }
-
+.ocult {
+    display: none !important;    /* amb prioritat sobre les declaracions condicionals segons l'orientació */
+}
 
     
