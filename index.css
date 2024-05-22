@@ -158,6 +158,9 @@ body {
         transform: rotate(-90deg);    /* gir de 90 graus correponent al canvi d'orientació */
     }
 }
+.ocult {
+    display: none;    /* amb prioritat sobre les declaracions condicionals segons l'orientació */
+}
 #llista_titol {
     display: flex;
     justify-content: center;
@@ -184,11 +187,6 @@ body {
 #llista_fotos::-webkit-scrollbar {
     display: none;    /* oculta la barra de desplaçament vertical */
 }
-@media (orientation: landscape) {
-    #llista_fotos {
-        height: 70vmin;
-    }
-}
 #webcam-container {
     margin: 2vh;
 }
@@ -203,9 +201,14 @@ body {
 #prediccions {
     font-size: 3vh;
 }
+@media (orientation: landscape) {
+    #llista_fotos {
+        height: 70vmin;
+    }
     #seccio_5 {
         flex-direction: row;
     }
+}
 .ocult {
     display: none !important;    /* amb prioritat sobre les declaracions condicionals segons l'orientació */
 }
