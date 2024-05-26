@@ -209,9 +209,6 @@ body {
         flex-direction: row;
     }
 }
-.ocult {
-    display: none !important;    /* amb prioritat sobre les declaracions condicionals segons l'orientació */
-}
 .llista_fila {
     display: flex;
     text-align: center;
@@ -231,7 +228,7 @@ body {
 }
 .llista_fila i {    /* icona per esborrar la foto */
     flex: 1;
-    color: #142890;
+    color: #950E17;
     font-size: 4vmax !important;
     cursor: pointer;
 }
