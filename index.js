@@ -9,10 +9,6 @@ function canvia_seccio(num_boto) {
             boto.style.backgroundColor = "#FCDEE0";
             seccio.style.display = "flex";    // es fa visible la secció activa
         }
-        else {
-            boto.style.color = "white";    // colors dels botons de seccions inactives
-            boto.style.backgroundColor = "#950E17";
-            seccio.style.display = "none";    // s'oculten les seccions inactives
         if (num_boto == 3) {    // si es prem el botó de la secció "Galeria"
             omple_llista();
         }
@@ -21,7 +17,13 @@ function canvia_seccio(num_boto) {
             if (typeof geoID === "undefined") {    // si encara no s'han obtingut les dades de localització del dispositiu
             navigator.geolocation.watchPosition(geoExit);    // inicia el seguiment de la localització del dispositiu
         }
+        else {
+            boto.style.color = "white";    // colors dels botons de seccions inactives
+            boto.style.backgroundColor = "#950E17";
+            seccio.style.display = "none";    // s'oculten les seccions inactives
+        }
     }
+}
 }
 let validat = false;    // variable que permet saber si hi ha algun usuari validat
 let nom, contrasenya;
